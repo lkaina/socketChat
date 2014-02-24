@@ -20,7 +20,10 @@ var server = http.createServer(function(req, res){
   });
 });
 
-var app = server.listen(port);
+var app = server.listen(process.env.PORT, function () {  //Updated
+  var addr = server.address();
+  console.log('   app listening on http://' + addr.address + ':' + addr.port);
+}););
 var io = require('socket.io').listen(app);
 
 //Initialize lists to keep track of users/rooms and set default to lobby
