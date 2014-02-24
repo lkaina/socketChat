@@ -18,7 +18,7 @@ var server = http.createServer(function(req, res){
   });
 });
 
-var app = server.listen(8000, '127.0.0.1');
+var app = server.listen(8000);
 var io = require('socket.io').listen(app);
 
 //Initialize lists to keep track of users/rooms and set default to lobby
