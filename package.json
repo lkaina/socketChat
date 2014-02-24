@@ -1,7 +1,7 @@
 {
-  "name": "entefy",
+  "name": "socket-chat",
   "version": "0.0.1",
-  "description": "chat server for entefy",
+  "description": "chat server",
   "main": "index.js",
   "dependencies": {
     "jquery": "~2.1.0",
