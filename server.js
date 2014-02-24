@@ -2,6 +2,8 @@ var http = require('http');
 var fs = require('fs');
 var io = require('socket.io');
 
+var port = process.env.PORT || 1337;
+
 var server = http.createServer(function(req, res){
   var fileName;
   if (req.url === '/') {
@@ -18,7 +20,7 @@ var server = http.createServer(function(req, res){
   });
 });
 
-var app = server.listen(8000);
+var app = server.listen(port);
 var io = require('socket.io').listen(app);
 
 //Initialize lists to keep track of users/rooms and set default to lobby
