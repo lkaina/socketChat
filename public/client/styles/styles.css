@@ -1,0 +1,144 @@
+body {
+  height:100%;
+  width:100%;
+  font: small-caps normal 16px/150% Arial, Helvetica, sans-serif;
+}
+.modal {
+  position:fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.formWrap {
+  width:20%;
+  height:15%;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin: auto;
+
+  background:gray;
+
+  border-radius: 15px;
+  border: 10px solid white;
+
+  text-align: center;
+}
+.nameBox {
+  width:80%;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.content {
+  width: 1024px;
+  height: 600px;
+  margin: 0 auto;
+  background: white;
+}
+h1 {
+  font-size:4em;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+header {
+  margin-top: 50px;
+  width:1022px;
+  height:70px;
+  border: 1px solid black;
+}
+main {
+  width:1022px;
+  height: 598px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+main h3 {
+  text-align: center;
+}
+.messages {
+  width:800px;
+  height:500px;
+  float:left;
+  border-right: 1px solid black;
+  overflow-y: auto;
+}
+.messages ul {
+  padding: 10px;
+}
+main nav {
+  width:221px;
+  height:500px;
+  float:right;
+  background: gray;
+}
+main nav ul {
+  margin: auto;
+  height: 200px;
+  width: 190px;
+  border: 1px solid black;
+  background: white;
+}
+.users {
+  height: 250px;
+  border-bottom: 1px solid black;
+}
+.users li {
+  padding-left: 4px;
+}
+.roomList {
+  height: 249px;
+}
+.roomList li {
+  padding-left: 4px;
+}
+.roomList li:hover {
+  background: gray;
+  color: white;
+}
+.roomList li:active {
+  background: black;
+  color: white;
+}
+.roomList li:nth-child(1) {
+  background: blue;
+  color: white;
+}
+.userInput {
+  float:left;
+  width: 1022px;
+  height: 98px;
+  border-top: 1px solid black;
+}
+.msgInput {
+  float:left;
+  height: 98px;
+  width: 800px;
+  border-right: 1px solid black;
+}
+.msgInput form {
+  padding-top: 1%;
+  padding-left: 1%;
+}
+.roomInput {
+  float:right;
+  width: 221px;
+  height: 98px;
+}
+.roomInputWrap {
+  padding: 10px 0 0 20px;
+}
+.roomInput p {
+  font: italic 10px/150% Arial, Helvetica, sans-serif;
+}
+.msgBox {
+  position:relative;
+  margin: auto 0;
+  width: 80%;
+}
+
+

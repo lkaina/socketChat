@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat Client</title>
+    <link rel='stylesheet' href='/public/client/styles/reset.css'>
+    <link rel='stylesheet' href='/public/client/styles/styles.css'>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/client/scripts/app.js"></script>
+  </head>
+  <body>
+    <section class="userName modal">
+      <div class="formWrap">
+        <p>Please Enter a Username To Proceed</p>
+        <form>
+          <input class="nameBox" type="text" placeholder="Username"></input>
+          <br>
+          <button class="nameButton">Enter</button>
+        </form>
+      </div>
+    </section>
+    <section class="content">
+      <header>
+        <h1>Welcome To the Chat Room!</h1>
+      </header>
+      <main>
+          <section class='messages'>
+            <ul>
+            </ul>
+          </section>
+          <nav>
+            <section class='userList'>
+              <h3>Users in Current Room</h3>
+              <ul>
+              </ul>
+            </section>
+            <section class='roomList'>
+              <h3>Room List</h3>
+              <ul>
+              </ul>
+            </section>
+          </nav>
+          <footer class='userInput'>
+            <div class='msgInput'>
+              <form>
+                <input type='text' class="msgBox" placeholder="Enter message"></input>
+                <br>
+                <button class="msgButton">Send</button>
+                <br>
+              </form>
+            </div>
+            <div class='roomInput'>
+              <div class='roomInputWrap'>
+                <h4>Create New Room</h4>
+                <form>
+                  <input type='text' class="newRoomBox" placeholder="Room Name"></input>
+                  <br>
+                  <button class="newRoomButton">Send</button>
+                </form>
+                <p>Or click on an existing room to switch</p>
+              </div>
+            </div>
+          </footer>
+      </main>
+    </section>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+  </body>
+</html>

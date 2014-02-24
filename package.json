@@ -1,0 +1,12 @@
+{
+  "name": "entefy",
+  "version": "0.0.1",
+  "description": "chat server for entefy",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "socket.io": "~0.9.16"
+  },
+  "author": "Leighton Kaina",
+  "license": "BSD-2-Clause"
+}
