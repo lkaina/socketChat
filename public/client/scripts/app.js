@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var user, currentRoom;
-  var url = 'http://127.0.0.1';
+  var url = 'http://socket-chat.azurewebsites.net';
   var socket = io.connect(url);
 
   var $msgBox = $('.msgBox');
