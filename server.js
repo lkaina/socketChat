@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 
-var port = 1337;
+var port = process.env.PORT || 1337;
 
 var server = http.createServer(function(req, res){
   var fileName;
